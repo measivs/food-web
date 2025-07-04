@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tastico – Food Website</title>
+  <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet" />
+  <script defer src="js/script.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <img src="assets/images/favicon.png" alt="Tastico logo" />
+        <span class="logo-text">Tastico</span>
+      </div>
+      <nav class="main-nav" id="navbar">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="burger" id="burger-btn">☰</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Deliciously Crafted Meals</h1>
+      <p>Enjoy gourmet dishes made with passion and the freshest ingredients.</p>
+      <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We are committed to bringing you unforgettable dining experiences.</p>
+    </div>
+  </section>
+
+  <section id="menu" class="menu">
+    <div class="container">
+      <h2>Our Menu</h2>
+      <div class="menu-grid">
+        <div class="menu-item">Pizza Margherita</div>
+        <div class="menu-item">Spaghetti Carbonara</div>
+        <div class="menu-item">Grilled Salmon</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2>What Our Clients Say</h2>
+      <div id="testimonial-data">Loading testimonial...</div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="password" name="password" placeholder="Password" required />
+        <button type="button" id="toggle-password">Show/Hide</button>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="special" class="special">
+    <div class="container">
+      <h2>Chef's Special</h2>
+      <div id="dish-of-day">Loading dish of the day...</div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Tastico. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div id="cookie-banner">
+    <p>We use cookies to improve your experience. <button id="accept-cookies">Accept</button></p>
+  </div>
+</body>
+
+</html>
