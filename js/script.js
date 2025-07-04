@@ -13,11 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const form = document.getElementById("contact-form");
   const passwordToggle = document.getElementById("toggle-password");
-  const passwordInput = form.querySelector("input[name='password']");
+  const passwordInput = document.querySelector("input[name='password']");
 
   passwordToggle.addEventListener("click", () => {
     const isPassword = passwordInput.type === "password";
     passwordInput.type = isPassword ? "text" : "password";
+    passwordToggle.textContent = isPassword ? "🙈" : "👁️";
   });
 
   form.addEventListener("submit", (e) => {
