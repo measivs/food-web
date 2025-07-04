@@ -1,0 +1,40 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Dependency directories (if added later)
+node_modules/
+bower_components/
+
+# Build output
+dist/
+build/
+.cache/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDEs/editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Env files (sensitive config)
+.env
+.env.*
+
+# Optional: Ignore test coverage
+coverage/
+
+# Optional: Ignore custom config or temp files
+*.local
+*.log
+*.tmp
+*.bak
+
+# Mac zips + trash
+__MACOSX/
+.Trashes
