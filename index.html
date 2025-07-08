@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tastico – Food Website</title>
+  <title>Tastico – Gourmet Dining Redefined</title>
   <link rel="icon" href="assets/images/favicon.png" type="image/png" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,8 +11,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet" />
   <script defer src="js/script.js"></script>
 </head>
-
 <body>
+
   <header class="site-header">
     <div class="container">
       <div class="logo">
@@ -28,14 +27,15 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <button class="burger" id="burger-btn">☰</button>
+      <button class="burger" id="burger-btn" aria-label="Toggle Navigation">☰</button>
     </div>
   </header>
 
   <section class="hero">
     <div class="container">
       <h1>Deliciously Crafted Meals</h1>
-      <p>Enjoy gourmet dishes made with passion and the freshest ingredients.</p>
+      <p>Savor the taste of culinary excellence, where every dish is a celebration of flavor, tradition, and creativity. Discover meals that tell stories and bring people together.</p>
+      
       <a href="#menu" class="btn">Explore Menu</a>
     </div>
   </section>
@@ -43,17 +43,57 @@
   <section id="about" class="about">
     <div class="container">
       <h2>About Us</h2>
-      <p>We are committed to bringing you unforgettable dining experiences.</p>
+      <p>At <strong>Tastico</strong>, we believe dining is more than just eating — it's an experience that engages all senses. Founded by a team of passionate food enthusiasts, Tastico was born out of a desire to reimagine traditional cuisine with a modern twist.</p>
+      <p>Every ingredient we use is carefully sourced, every dish handcrafted, and every detail of your experience designed to leave a lasting impression. Whether you’re here for a quiet dinner or a special occasion, we want you to feel at home while discovering flavors that surprise and delight.</p>
     </div>
   </section>
 
   <section id="menu" class="menu">
     <div class="container">
       <h2>Our Menu</h2>
+      <p>Our seasonal menu is designed to offer something for every palate, inspired by international flavors but rooted in local, sustainable ingredients. We pride ourselves on balancing comfort food classics with bold culinary innovation.</p>
+      <span style="margin-right: 10px;"></span>
       <div class="menu-grid">
-        <div class="menu-item">Pizza Margherita</div>
-        <div class="menu-item">Spaghetti Carbonara</div>
-        <div class="menu-item">Grilled Salmon</div>
+        <div class="menu-item">
+        <h3>🍕 Pizza Margherita</h3>
+        <p>A timeless favorite with hand-stretched dough, San Marzano tomatoes, creamy buffalo mozzarella, and fresh basil — finished with a drizzle of extra virgin olive oil.</p>
+      </div>
+      <div class="menu-item">
+        <h3>🍝 Spaghetti Carbonara</h3>
+        <p>Our take on the Roman classic, featuring artisanal pasta, crispy pancetta, organic eggs, and aged pecorino, tossed to creamy perfection without a drop of cream.</p>
+      </div>
+      <div class="menu-item">
+        <h3>🐟 Grilled Salmon</h3>
+        <p>Wild-caught Atlantic salmon grilled to tender perfection, served with lemon-herb quinoa, roasted vegetables, and a subtle caper butter sauce.</p>
+      </div>
+      <div class="menu-item">
+        <h3>🥩 Filet Mignon</h3>
+        <p>Center-cut beef tenderloin grilled to your preference, accompanied by garlic truffle mashed potatoes and a rosemary red wine jus.</p>
+      </div>
+      <div class="menu-item">
+        <h3>🥗 Mediterranean Quinoa Bowl</h3>
+        <p>A vibrant mix of quinoa, cherry tomatoes, kalamata olives, cucumber, red onion, and feta — dressed with lemon-herb vinaigrette.</p>
+      </div>
+      <div class="menu-item">
+        <h3>🍰 Tiramisu</h3>
+        <p>Classic Italian dessert layered with espresso-soaked ladyfingers, mascarpone cream, and dusted cocoa — a perfect sweet finish.</p>
+      </div>
+      <div class="menu-item">
+        <h3>🍤 Shrimp Tacos</h3>
+        <p>Spiced grilled shrimp tucked into soft corn tortillas, topped with citrus slaw and avocado crema — served with lime wedges and salsa verde.</p>
+      </div>
+      <div class="menu-item">
+        <h3>🥬 Vegan Buddha Bowl</h3>
+        <p>A nourishing bowl of roasted chickpeas, sweet potato, kale, red cabbage, and brown rice with tahini-lime dressing.</p>
+      </div>
+      <div class="menu-item">
+        <h3>🍳 Eggs Benedict</h3>
+        <p>Poached free-range eggs over toasted English muffins with smoked ham and silky hollandaise sauce — a brunch classic.</p>
+      </div>
+      <div class="menu-item">
+        <h3>🍫 Chocolate Lava Cake</h3>
+        <p>Warm dark chocolate cake with a molten center, served with vanilla bean ice cream and fresh raspberries.</p>
+      </div>
       </div>
     </div>
   </section>
@@ -61,23 +101,37 @@
   <section id="testimonials" class="testimonials">
     <div class="container">
       <h2>What Our Clients Say</h2>
-      <div id="testimonial-data">Loading testimonial...</div>
+      <p>We’re honored to serve a community of food lovers who appreciate authenticity, quality, and great service. Here’s what some of our guests have shared:</p>
+      <span style="margin-right: 10px;"></span>
+      <div id="testimonial-data">
+        <div class="testimonial-card">
+          <p>“Every bite felt like a symphony of flavors. Tastico is more than a restaurant — it’s a destination. Easily one of the best meals I’ve had this year.”</p>
+          <strong>– Alex P.</strong>
+        </div>
+        <div class="testimonial-card">
+          <p>“The ambiance, the service, the presentation — everything was flawless. I brought my parents here for their anniversary and they loved every second.”</p>
+          <strong>– Maria S.</strong>
+        </div>
+        <div class="testimonial-card">
+          <p>“I can’t recommend this place enough. From the appetizers to the desserts, everything is made with such care. The chef’s special was a masterpiece.”</p>
+          <strong>– Liam R.</strong>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="contact" class="contact">
     <div class="container">
       <h2>Contact Us</h2>
+      <p>Have a question, reservation request, or just want to say hello? We'd love to hear from you. Use the form below and our team will get back to you as soon as possible.</p>
       <form id="contact-form">
-        <input type="text" name="name" placeholder="Name" required />
-        <input type="email" name="email" placeholder="Email" required />
-
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
         <div class="password-field">
-          <input type="password" name="password" placeholder="Password" required />
-          <span id="toggle-password" class="toggle-password">👁️</span>
+          <input type="password" name="password" placeholder="Create a Password" required />
+          <span id="toggle-password" class="toggle-password" title="Toggle password visibility">👁️</span>
         </div>
-
-        <textarea name="message" placeholder="Your Message" required></textarea>
+        <textarea name="message" placeholder="Your Message or Reservation Details" rows="5" required></textarea>
         <button type="submit">Submit</button>
       </form>
     </div>
@@ -86,19 +140,24 @@
   <section id="special" class="special">
     <div class="container">
       <h2>Chef's Special</h2>
-      <div id="dish-of-day">Loading dish of the day...</div>
+      <div id="dish-of-day">
+        <img src="assets/images/special-dish.jpg" alt="Dish of the Day" />
+        <p><strong>Today's highlight:</strong> Slow-cooked Lamb Shank infused with garlic and rosemary, braised in a rich red wine reduction, and served with buttery mashed potatoes and charred seasonal greens. A soul-warming dish that speaks to tradition and comfort.</p>
+      </div>
     </div>
   </section>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2025 Tastico. All rights reserved.</p>
+      <p>&copy; 2025 Tastico. All rights reserved. Crafted with heart, seasoned with soul.</p>
     </div>
   </footer>
 
   <div id="cookie-banner">
-    <p>We use cookies to improve your experience. <button id="accept-cookies">Accept</button></p>
+    <p>We use cookies to enhance your browsing experience and deliver personalized content. 
+      <button id="accept-cookies">Accept</button>
+    </p>
   </div>
-</body>
 
+</body>
 </html>
