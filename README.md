@@ -40,7 +40,7 @@ Tastico/
 │   └── script.js
 ├── assets/
 │   └── images/
-│       ├── favicon.png
+│       └── favicon.png
 └── README.md
 ```
 
