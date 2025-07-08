@@ -41,7 +41,8 @@ Tastico/
 ├── assets/
 │   └── images/
 │       └── favicon.png
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 ---
