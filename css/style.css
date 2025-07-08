@@ -172,7 +172,7 @@ section {
 
 .menu-item:hover {
   transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 20px rgba(206, 7, 7, 0.875);
 }
 
 .testimonials #testimonial-data {
