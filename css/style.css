@@ -241,6 +241,68 @@ button:hover {
   padding: 2rem 1rem;
 }
 
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.footer-about h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+.footer-nav h4,
+.footer-contact h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: var(--accent);
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-nav ul li a {
+  text-decoration: none;
+  color: #ddd;
+  transition: color 0.2s;
+}
+
+.footer-nav ul li a:hover {
+  color: var(--primary);
+}
+
+.footer-contact p {
+  margin: 0.25rem 0;
+}
+
+.social-icons {
+  margin-top: 0.5rem;
+}
+
+.social-icons a {
+  text-decoration: none;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  color: #eee;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
 #cookie-banner {
   position: fixed;
   bottom: 0;
