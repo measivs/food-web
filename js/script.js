@@ -23,18 +23,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
+
     const name = form.name.value.trim();
     const email = form.email.value.trim();
     const password = form.password.value.trim();
     const message = form.message.value.trim();
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$/;
+
     if (!name || !email || !password || !message) {
       alert("All fields are required.");
       return;
     }
+
     if (!emailRegex.test(email)) {
       alert("Invalid email format.");
+      return;
+    }
+
+    if (!passwordRegex.test(password)) {
+      alert(
+        "Password must be at least 8 characters long and include:\n" +
+        "- one uppercase letter\n" +
+        "- one lowercase letter\n" +
+        "- one number\n" +
+        "- one special character (@$!%*?&)"
+      );
       return;
     }
 
@@ -54,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
     cookieBanner.style.display = "none";
   });
 
-  fetch("https://randomuser.me/api/?results=3")
+  fetch("https://randomuser.me/api/?results=8")
     .then(res => res.json())
     .then(data => {
       const box = document.getElementById("testimonial-data");
